@@ -1,0 +1,14 @@
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.csprojResolveAssemblyReference.cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\NinjaDomain.DataModel.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\NinjaDomain.DataModel.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\EntityFramework.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\NinjaDomain.Classes.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\NinjaDomain.Classes.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\EntityFramework.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.Migrations.Initial.resources
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.csproj.GenerateResource.Cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.Migrations.AddBirthdayToNinja.resources

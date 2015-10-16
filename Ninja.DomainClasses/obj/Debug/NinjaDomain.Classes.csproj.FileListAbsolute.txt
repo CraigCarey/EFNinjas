@@ -1,0 +1,15 @@
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.dll
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.pdb
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.dll
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.pdb
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.csprojResolveAssemblyReference.cache
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo Before\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.dll
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo Before\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.pdb
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo Before\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.csprojResolveAssemblyReference.cache
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo Before\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.dll
+S:\CloudCopy_theDropBoxCopyWIthLotsOfGB\Copy\EF6 Course\Module 2\Module 2 Demo Before\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\Ninja.DomainClasses\bin\Debug\NinjaDomain.Classes.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.csprojResolveAssemblyReference.cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\Ninja.DomainClasses\obj\Debug\NinjaDomain.Classes.pdb

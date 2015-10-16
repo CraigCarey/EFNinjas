@@ -1,0 +1,12 @@
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\ExpenseTrackerDB.mdf
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\ExpenseTrackerDB_log.ldf
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\CodeModelFromDB.dll.config
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\CodeModelFromDB.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\CodeModelFromDB.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\EntityFramework.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\EntityFramework.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\obj\Debug\CodeModelFromDB.csprojResolveAssemblyReference.cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\obj\Debug\CodeModelFromDB.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\CodeModelFromDB\obj\Debug\CodeModelFromDB.pdb

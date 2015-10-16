@@ -1,0 +1,10 @@
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EDMXFromDB.dll.config
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EDMXFromDB.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EDMXFromDB.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EntityFramework.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EntityFramework.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\obj\Debug\EDMXFromDB.csprojResolveAssemblyReference.cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\obj\Debug\EDMXFromDB.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\EDMXFromDB\obj\Debug\EDMXFromDB.pdb

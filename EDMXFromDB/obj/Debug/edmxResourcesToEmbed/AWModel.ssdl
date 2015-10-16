@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExpenseTrackerDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Expense">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ExpenseGroupId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ExpenseGroupStatusId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseGroupStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Expense_ExpenseGroup">
+    <End Role="ExpenseGroup" Type="Self.ExpenseGroup" Multiplicity="1" />
+    <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExpenseGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Expense">
+        <PropertyRef Name="ExpenseGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExpenseGroup_ExpenseGroupStatus">
+    <End Role="ExpenseGroupStatus" Type="Self.ExpenseGroupStatus" Multiplicity="1" />
+    <End Role="ExpenseGroup" Type="Self.ExpenseGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExpenseGroupStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExpenseGroup">
+        <PropertyRef Name="ExpenseGroupStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ExpenseTrackerDBModelStoreContainer">
+    <EntitySet Name="Expense" EntityType="Self.Expense" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExpenseGroup" EntityType="Self.ExpenseGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExpenseGroupStatus" EntityType="Self.ExpenseGroupStatus" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Expense_ExpenseGroup" Association="Self.FK_Expense_ExpenseGroup">
+      <End Role="ExpenseGroup" EntitySet="ExpenseGroup" />
+      <End Role="Expense" EntitySet="Expense" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExpenseGroup_ExpenseGroupStatus" Association="Self.FK_ExpenseGroup_ExpenseGroupStatus">
+      <End Role="ExpenseGroupStatus" EntitySet="ExpenseGroupStatus" />
+      <End Role="ExpenseGroup" EntitySet="ExpenseGroup" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

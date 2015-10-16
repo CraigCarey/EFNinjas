@@ -1,0 +1,14 @@
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\EntityFramework.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\NinjaDomain.Classes.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\NinjaDomain.DataModel.dll
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\NinjaDomain.Classes.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\NinjaDomain.DataModel.pdb
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\EntityFramework.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
