@@ -33,7 +33,11 @@ namespace ConsoleApplication
             {
                 // point the database log function to Console, so we can see the output
                 context.Database.Log = Console.WriteLine;
+
+                // Calls sql INSERT function - INSERT [dbo].[Ninjas]([Name], [ServedInOniwaban], [ClanId], [DateOfBirth])
                 context.Ninjas.Add(ninja);
+
+                // This must be called, or changes to the context will not be applied to the actual db
                 context.SaveChanges();
             }
         }
@@ -59,6 +63,8 @@ namespace ConsoleApplication
             using (var context = new NinjaContext())
             {
                 context.Database.Log = Console.WriteLine;
+
+                // Same INSERT as in InsertNinja, but doen multiple times in one db call
                 context.Ninjas.AddRange(new List<Ninja> { ninja1, ninja2 });
                 context.SaveChanges();
             }
@@ -80,10 +86,11 @@ namespace ConsoleApplication
                 //var ninja = context.Ninjas.FirstOrDefault(n => n.DateOfBirth >= new DateTime(1984, 1, 1));
                 
                 // A paging example
+                // Uses SQL SELECT [Extent1.*]... WHERE [Extent1].[DateOfBirth] >= convert(datetime2, '1984-01-01 00:00:00.0000000', 121) ORDER BY [Extent1].[Name] ASC OFFSET 1 ROWS FETCH NEXT 1 ROWS ONLY
                 var ninja = context.Ninjas.Where(n => n.DateOfBirth >= new DateTime(1984, 1, 1))
                     .OrderBy(n => n.Name)
                     .Skip(1).Take(1)        // Paging methods
-                    .FirstOrDefault();      // Executing query or 
+                    .FirstOrDefault();      // Executes the query
                 
                 //var query = context.Ninjas;
                 //var someNinjas = query.ToList();
@@ -104,10 +111,14 @@ namespace ConsoleApplication
             using (var context = new NinjaContext())
             {
                 context.Database.Log = Console.WriteLine;
+
+                // first call to db: SELECT TOP 1 FROM Ninjas
                 var ninja = context.Ninjas.FirstOrDefault();
 
+                // context modified, not db
                 ninja.ServedInOniwaban = !ninja.ServedInOniwaban;
 
+                // second call to db: UPDATE Ninjas SET ServedInOniwaban = 0 WHERE Id = 1
                 context.SaveChanges();
             }
         }
@@ -149,7 +160,7 @@ namespace ConsoleApplication
 
         private static void RetrieveDataWithFind()
         {
-            var keyVal = 4;
+            var keyVal = 10;
 
             using (var context = new NinjaContext())
             {
@@ -161,12 +172,14 @@ namespace ConsoleApplication
                 var ninja = context.Ninjas.Find(keyVal);
                 Console.WriteLine("After Find#1: " + ninja.Name);
 
+                // Ninja found in context, no need for second trip to db
                 var someNinja = context.Ninjas.Find(keyVal);
                 Console.WriteLine("After Find#2: " + someNinja.Name);
                 ninja = null;
             }
         }
 
+        // TODO - couldn't save a stored procedure for some reason
         private static void RetrieveDataWithStoredProc()
         {
             using (var context = new NinjaContext())
@@ -191,6 +204,8 @@ namespace ConsoleApplication
             using (var context = new NinjaContext())
             {
                 context.Database.Log = Console.WriteLine;
+
+                // SELECT TOP 1 FROM Ninjas
                 ninja = context.Ninjas.FirstOrDefault();
             }
 
@@ -200,6 +215,8 @@ namespace ConsoleApplication
                 //context.Ninjas.Attach(ninja);
                 //context.Ninjas.Remove(ninja);   // new context, without Attach ninja not found
                 context.Entry(ninja).State = EntityState.Deleted;
+
+                // DELETE Ninjas WHERE Id = 8
                 context.SaveChanges();
             }
 
@@ -292,10 +309,15 @@ namespace ConsoleApplication
                 // load causes the query to be executed right away, in the same way FirstOrDefault does
                 //context.Entry(ninja).Collection(n => n.EquipmentOwned).Load();
 
+                // Lazy loading, 
+                // related collections automatically loaded from the database the first time that a property referring to the entity/entities is accessed
+                // requires that the related collections are virtual:
+                // Ninja { public virtual List<NinjaEquipment> EquipmentOwned { get; set; } }
                 Console.WriteLine("Ninja Equipment Count: {0}", ninja.EquipmentOwned.Count());
             }
         }
 
+        // queries that return something other than complete entities - returns anonymous type
         private static void ProjectionQuery()
         {
             using (var context = new NinjaContext())
