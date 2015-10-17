@@ -9,11 +9,9 @@ namespace NinjaDomain.DataModel.Migrations
     {
         public Configuration()
         {
-            // disabled by default, leave them off
             AutomaticMigrationsEnabled = false;
         }
 
-        // used to seed the db on each migration
         protected override void Seed(NinjaDomain.DataModel.NinjaContext context)
         {
             //  This method will be called after migrating to the latest version.

@@ -16,7 +16,8 @@ namespace ConsoleApplication
             // Stop EF going through the db initialization process when working with the NinjaContext
             Database.SetInitializer(new NullDatabaseInitializer<NinjaContext>());
 
-            ProjectionQuery();
+            // reset db
+            //DataHelpers.NewDbWithSeed();
         }
 
         private static void InsertNinja()
@@ -326,6 +327,59 @@ namespace ConsoleApplication
 
                 var ninjas = context.Ninjas.Select(n => new { n.Name, n.DateOfBirth, n.EquipmentOwned }).ToList();
             }
+        }
+
+        // used to prepare db for part 4
+        private static void ReseedDatabase()
+        {
+            Database.SetInitializer(new DropCreateDatabaseAlways<NinjaContext>());
+            using (var context = new NinjaContext())
+            {
+                context.Clans.Add(new Clan { ClanName = "Vermont Clan" });
+                var j = new Ninja
+                {
+                    Name = "JulieSan",
+                    ServedInOniwaban = false,
+                    DateOfBirth = new DateTime(1980, 1, 1),
+                    ClanId = 1
+
+                };
+                var s = new Ninja
+                {
+                    Name = "SampsonSan",
+                    ServedInOniwaban = false,
+                    DateOfBirth = new DateTime(2008, 1, 28),
+                    ClanId = 1
+
+                };
+                var l = new Ninja
+                {
+                    Name = "Leonardo",
+                    ServedInOniwaban = false,
+                    DateOfBirth = new DateTime(1984, 1, 1),
+                    ClanId = 1
+                };
+                var r = new Ninja
+                {
+                    Name = "Raphael",
+                    ServedInOniwaban = false,
+                    DateOfBirth = new DateTime(1985, 1, 1),
+                    ClanId = 1
+                };
+                context.Ninjas.AddRange(new List<Ninja> { j, s, l, r });
+                context.SaveChanges();
+                context.Database.ExecuteSqlCommand(
+                  @"CREATE PROCEDURE GetOldNinjas
+                    AS  SELECT * FROM Ninjas WHERE DateOfBirth<='1/1/1980'");
+
+                context.Database.ExecuteSqlCommand(
+                   @"CREATE PROCEDURE DeleteNinjaViaId
+                     @Id int
+                     AS
+                     DELETE from Ninjas Where Id = @id
+                     RETURN @@rowcount");
+            }
+
         }
 
     }

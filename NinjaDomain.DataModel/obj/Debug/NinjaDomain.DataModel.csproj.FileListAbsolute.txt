@@ -12,3 +12,4 @@ C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framewor
 C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.Migrations.Initial.resources
 C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.csproj.GenerateResource.Cache
 C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.Migrations.AddBirthdayToNinja.resources
+C:\Google Drive\Training\DotNet\Pluralsight Getting Started with Entity Framework 6\Ninja\NinjaDomain.DataModel\obj\Debug\NinjaDomain.DataModel.Migrations.Part4.resources

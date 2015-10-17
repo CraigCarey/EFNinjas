@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeModelFromDB", "CodeMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{FAECCB9A-02F3-48E2-BB48-BD5E5B4CB306}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "WpfApplication\WpfApplication.csproj", "{3BBBD035-2B94-4CD6-8A4B-1570CBAF4EFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FAECCB9A-02F3-48E2-BB48-BD5E5B4CB306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAECCB9A-02F3-48E2-BB48-BD5E5B4CB306}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAECCB9A-02F3-48E2-BB48-BD5E5B4CB306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBBD035-2B94-4CD6-8A4B-1570CBAF4EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBBD035-2B94-4CD6-8A4B-1570CBAF4EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBBD035-2B94-4CD6-8A4B-1570CBAF4EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBBD035-2B94-4CD6-8A4B-1570CBAF4EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
